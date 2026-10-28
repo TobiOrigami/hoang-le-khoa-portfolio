@@ -10,8 +10,6 @@ const translations = {
   "Về tôi": "About me",
   "Xem dự án": "View projects",
   "Điện thoại ↗": "Phone ↗",
-  "Luôn học hỏi": "Keep learning",
-  "mỗi ngày ✦": "every day ✦",
   "ĐÔI ĐIỀU VỀ MÌNH": "A LITTLE ABOUT ME",
   "về tôi": "me",
   "Mình là Hoàng Lê Khoa, hiện đang theo học ngành Công nghệ thông tin tại Đại học Trà Vinh. Mình quan tâm đến phát triển web, thích tìm hiểu cách các sản phẩm số được xây dựng và vận hành.": "I'm Hoàng Lê Khoa, currently studying Information Technology at Tra Vinh University. I'm interested in web development and learning how digital products are built and operated.",
