@@ -86,6 +86,6 @@ function setPortfolioLanguage(lang) {
 document.getElementById('languageToggle')?.addEventListener('click', () => {
   setPortfolioLanguage(document.documentElement.lang === 'en' ? 'vi' : 'en');
 });
-let savedLanguage = 'vi';
-try { savedLanguage = localStorage.getItem('portfolio-language') || 'vi'; } catch (_) {}
+let savedLanguage = 'en';
+try { savedLanguage = localStorage.getItem('portfolio-language') || 'en'; } catch (_) {}
 setPortfolioLanguage(savedLanguage);
