@@ -1,1 +1,79 @@
-<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Hoàng Lê Khoa | Fresher Web Developer Portfolio"><title>Hoàng Lê Khoa | Web Developer</title><link rel="stylesheet" href="style.css?v=20261028-layout-v3"></head><body><header class="site-header"><a class="logo" href="#home">&lt;/Khoa&gt;</a><nav class="site-nav" aria-label="Điều hướng chính"><a href="#about">Giới thiệu</a><a href="#skills">Kỹ năng</a><a href="#projects">Dự án</a><a href="#contact">Liên hệ</a></nav></header><main><section id="home" class="hero"><div class="hero-content"><span class="eyebrow">XIN CHÀO, MÌNH LÀ</span><h1>Hoàng Lê <em>Khoa</em></h1><h2>Fresher Web Developer <span>•</span> IT Student</h2><p>Sinh viên Công nghệ thông tin tại Đại học Trà Vinh, đang chuyển ngành từ lĩnh vực kỹ thuật sang công nghệ phần mềm. Mình yêu thích xây dựng website, học lập trình và giải quyết vấn đề.</p><div class="actions"><a class="btn" href="#projects">Xem dự án ↗</a><a class="btn outline" href="#contact">Liên hệ</a></div></div><div class="terminal"><div class="dots">● ● ●</div><code>const developer = {<br>&nbsp;name: "Hoàng Lê Khoa",<br>&nbsp;role: "Fresher Web Developer",<br>&nbsp;motto: "Better Code, Better Tomorrow"<br>};</code></div></section><section id="about"><span class="eyebrow">VỀ MÌNH</span><h2>Giới thiệu <em>bản thân</em></h2><div class="panel"><p>Mình hiện theo học ngành Công nghệ thông tin tại Đại học Trà Vinh (2026–nay). Trước đó mình học Kỹ thuật giao thông tại Đại học Bách Khoa (2014–2018) và có kinh nghiệm làm việc kỹ thuật tự do.</p><p>Mình đang tích lũy kiến thức HTML, CSS, JavaScript, lập trình C và thực hành qua các dự án web nhỏ. Mục tiêu của mình là phát triển năng lực để ứng tuyển vị trí Fresher Web Developer.</p></div></section><section id="skills"><span class="eyebrow">HỌC TẬP & THỰC HÀNH</span><h2>Kỹ năng <em>hiện tại</em></h2><div class="cards"><article class="panel"><h3>HTML5 & CSS3</h3><p>Xây dựng cấu trúc trang, bố cục responsive và giao diện người dùng.</p></article><article class="panel"><h3>JavaScript</h3><p>Thao tác DOM, xử lý sự kiện, kiểm tra biểu mẫu và localStorage.</p></article><article class="panel"><h3>Lập trình & công cụ</h3><p>Ngôn ngữ C cơ bản, Git/GitHub, debug, kiểm thử UI và Microsoft Office.</p></article></div></section><section id="projects"><span class="eyebrow">SẢN PHẨM CÓ THỂ TRẢI NGHIỆM</span><h2>Dự án <em>tiêu biểu</em></h2><div class="cards"><article class="panel project"><div class="symbol">⌘</div><small>HTML • CSS • JAVASCRIPT</small><h3>Personal Portfolio</h3><p>Trang giới thiệu bản thân, kỹ năng, định hướng nghề nghiệp và các dự án.</p><a class="btn" href="index.html">Xem website ↗</a></article><article class="panel project"><div class="symbol">▦</div><small>CRUD • LOCALSTORAGE</small><h3>Quản lý sinh viên</h3><p>Ứng dụng thêm, sửa, xóa, tìm kiếm thông tin sinh viên và lưu trên trình duyệt.</p><a class="btn" href="student-manager.html">Mở ứng dụng ↗</a></article><article class="panel project"><div class="symbol">☁</div><small>SEARCH • LEARNING TRACKER</small><h3>Cloud Computing Notes</h3><p>Kho kiến thức điện toán đám mây với bộ lọc, tra cứu và đánh dấu tiến độ học.</p><a class="btn" href="cloud-notes.html">Xem ghi chú ↗</a></article></div><p class="muted">Các dự án là sản phẩm thực hành, vận hành ở phía trình duyệt, không có backend hay tài khoản người dùng.</p></section><section id="contact"><span class="eyebrow">KẾT NỐI</span><h2>Liên hệ <em>với mình</em></h2><div class="panel"><p>✉ <a href="mailto:leka.hoang96@gmail.com">leka.hoang96@gmail.com</a></p><p>☎ <a href="tel:+84937772705">(+84) 937 772 705</a></p><p>⌘ <a href="https://github.com/TobiOrigami/hoang-le-khoa-portfolio" target="_blank" rel="noopener">GitHub — TobiOrigami</a></p></div></section></main><footer>© <span id="year"></span> Hoàng Lê Khoa · Better Code, Better Tomorrow</footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio cá nhân của Hoàng Lê Khoa — Fresher Web Developer, sinh viên Công nghệ thông tin tại Đại học Trà Vinh.">
+  <title>Hoàng Lê Khoa | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Về đầu trang"><span class="brand-mark">&lt;/&gt;</span><span>Hoàng Lê Khoa</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+    <nav id="navMenu" class="nav-menu" aria-label="Điều hướng chính">
+      <a href="#home">Trang chủ</a><a href="#about">Giới thiệu</a><a href="#skills">Kỹ năng</a><a href="#projects">Dự án</a><a href="#contact">Liên hệ</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Đổi giao diện">☼ / ☾</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">XIN CHÀO, MÌNH LÀ</p>
+          <h1>Hoàng Lê <span>Khoa</span></h1>
+          <p class="hero-role">Fresher Web Developer <span>|</span> IT Student <span>|</span> Lifelong Learner</p>
+          <p class="hero-description">Mình là sinh viên Công nghệ thông tin tại Đại học Trà Vinh, yêu thích công nghệ và phát triển web. Mình đang từng bước xây dựng nền tảng lập trình, rèn luyện tư duy giải quyết vấn đề và tạo ra những sản phẩm hữu ích.</p>
+          <div class="hero-actions"><a class="button primary" href="#about">Về tôi <span>↗</span></a><a class="button secondary" href="#projects">Xem dự án</a></div>
+          <div class="social-links"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:leka.hoang96@gmail.com">Email ↗</a><a href="tel:+84937772705">Điện thoại ↗</a></div>
+        </div>
+        <div class="hero-art" aria-label="Khu vực ảnh đại diện">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="avatar-card"><div class="avatar-symbol">&lt; K / &gt;</div><p>BUILD • LEARN • IMPROVE</p></div>
+          <div class="floating-note note-top">Better Code<br>Better Tomorrow</div><div class="floating-note note-bottom">Luôn học hỏi<br>mỗi ngày ✦</div>
+        </div>
+      </div>
+      <div class="hero-glow"></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading"><span class="section-icon">✦</span><div><p class="eyebrow">ĐÔI ĐIỀU VỀ MÌNH</p><h2>Giới thiệu <span>về tôi</span></h2></div></div>
+      <div class="about-grid">
+        <div class="about-copy"><p>Mình là Hoàng Lê Khoa, hiện đang theo học ngành Công nghệ thông tin tại Đại học Trà Vinh. Mình quan tâm đến phát triển web, thích tìm hiểu cách các sản phẩm số được xây dựng và vận hành.</p><p>Trước đây, mình từng học ngành Kỹ thuật giao thông tại Đại học Bách Khoa (2014–2018). Hiện tại, mình tập trung củng cố kiến thức nền tảng, thực hành qua các dự án nhỏ và chuẩn bị cho cơ hội nghề nghiệp đầu tiên trong lĩnh vực CNTT.</p><div class="education-list"><div><span class="edu-icon">▰</span><div><strong>Đại học Trà Vinh</strong><small>Công nghệ thông tin · 2026–nay</small></div></div><div><span class="edu-icon">▰</span><div><strong>Đại học Bách Khoa</strong><small>Kỹ thuật giao thông · 2014–2018</small></div></div></div></div>
+        <aside class="info-card"><h3><span class="code-icon">&lt;/&gt;</span> Thông tin cơ bản</h3><dl><div><dt>Họ và tên</dt><dd>Hoàng Lê Khoa</dd></div><div><dt>Định hướng</dt><dd>Fresher Web Developer</dd></div><div><dt>Ngành học</dt><dd>Công nghệ thông tin</dd></div><div><dt>Trường</dt><dd>Đại học Trà Vinh</dd></div><div><dt>Email</dt><dd><a href="mailto:leka.hoang96@gmail.com">leka.hoang96@gmail.com</a></dd></div><div><dt>Điện thoại</dt><dd><a href="tel:+84937772705">+84 937 772 705</a></dd></div><div><dt>Trạng thái</dt><dd><span class="status-dot"></span> Đang học và thực hành</dd></div></dl></aside>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading"><span class="section-icon">⚙</span><div><p class="eyebrow">NĂNG LỰC HIỆN TẠI</p><h2>Kỹ năng <span>của mình</span></h2></div></div>
+      <p class="section-intro">Các kỹ năng dưới đây là mức tự đánh giá ban đầu; hãy cập nhật theo năng lực thực tế của huynh.</p>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-top"><span class="skill-logo html">5</span><strong>HTML5</strong></div><div class="skill-track"><span style="width:70%"></span></div><small>Đang rèn luyện</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-logo css">3</span><strong>CSS3</strong></div><div class="skill-track"><span style="width:65%"></span></div><small>Đang rèn luyện</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-logo js">JS</span><strong>JavaScript</strong></div><div class="skill-track"><span style="width:45%"></span></div><small>Nền tảng cơ bản</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-logo c-lang">C</span><strong>Lập trình C</strong></div><div class="skill-track"><span style="width:55%"></span></div><small>Đang thực hành</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-logo git">⌘</span><strong>Git / GitHub</strong></div><div class="skill-track"><span style="width:45%"></span></div><small>Đang tìm hiểu</small></article>
+        <article class="skill-card"><div class="skill-top"><span class="skill-logo office">▦</span><strong>MS Office</strong></div><div class="skill-track"><span style="width:70%"></span></div><small>Cơ bản</small></article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading"><span class="section-icon">▣</span><div><p class="eyebrow">THỰC HÀNH VÀ HỌC HỎI</p><h2>Dự án <span>tiêu biểu</span></h2></div></div>
+      <div class="projects-grid">
+        <article class="project-card"><div class="project-icon">▤</div><div class="project-content"><p class="project-type">WEB DEVELOPMENT</p><h3>Personal Portfolio</h3><p>Website giới thiệu bản thân, kỹ năng, quá trình học tập và các dự án cá nhân.</p><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div><a href="index.html" class="project-link">Xem Portfolio ↗</a></div></article>
+        <article class="project-card"><div class="project-icon">&lt;/&gt;</div><div class="project-content"><p class="project-type">PRACTICE PROJECT</p><h3>Quản lý sinh viên</h3><p>Ứng dụng quản lý danh sách sinh viên: thêm, sửa, xóa, tìm kiếm và lưu dữ liệu trên trình duyệt.</p><div class="tags"><span>Programming</span><span>UI</span></div><a href="student-manager.html" class="project-link">Mở ứng dụng ↗</a></div></article>
+        <article class="project-card"><div class="project-icon">☁</div><div class="project-content"><p class="project-type">LEARNING PROJECT</p><h3>Cloud Computing Notes</h3><p>Thư viện kiến thức Cloud với tìm kiếm chủ đề, bài học và đánh dấu tiến độ học tập.</p><div class="tags"><span>Cloud</span><span>Documentation</span></div><a href="cloud-notes.html" class="project-link">Khám phá ghi chú ↗</a></div></article>
+      </div>
+      <p class="project-disclaimer">* Sản phẩm demo thực hành cá nhân, dữ liệu được lưu cục bộ trên trình duyệt; chưa có máy chủ hoặc cơ sở dữ liệu trực tuyến.</p>
+    </section>
+
+    <section class="contact-section" id="contact"><div><p class="eyebrow">KẾT NỐI VỚI MÌNH</p><h2>Cùng tạo nên điều <span>tuyệt vời</span>.</h2><p>Mình luôn sẵn sàng học hỏi, trao đổi về công nghệ và đón nhận cơ hội phù hợp cho Fresher.</p><div class="contact-details"><p><strong>Email:</strong> <a href="mailto:leka.hoang96@gmail.com">leka.hoang96@gmail.com</a></p><p><strong>Điện thoại:</strong> <a href="tel:+84937772705">+84 937 772 705</a></p></div></div><a class="button primary" href="mailto:leka.hoang96@gmail.com">Gửi email ↗</a></section>
+  </main>
+  <footer><span>© <span id="year"></span> Hoàng Lê Khoa. Made with HTML, CSS & JavaScript.</span><a href="#home">Lên đầu trang ↑</a></footer>
+</body>
+</html>
